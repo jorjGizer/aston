@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Addresses</title>
+</head>
+<body>
+<h1>All Addresses</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Building</th>
+        <th>Apartment</th>
+        <th>Person</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="address : ${address}">
+        <td th:text="${address.getId()}">ID</td>
+        <td th:text="${address.getBuilding()}">Building</td>
+        <td th:text="${address.getApartment()}">Apartment</td>
+        <td th:text="${address.getAddressPersonDto.getId()}">Person</td>
+        <td th:text="${address.getAddressPersonDto.getSurName()}">Person</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

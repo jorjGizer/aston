@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Persons</title>
+</head>
+<body>
+<h1>All Persons</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>SurName</th>
+        <th>Patronymic</th>
+        <th>Date of Birth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person : ${person}">
+        <td th:text="${person.getId()}">ID</td>
+        <td th:text="${person.getSurName()}">First Name</td>
+        <td th:text="${person.getPatronymic()}">Last Name</td>
+        <td th:text="${person.getDateOfBirth()}">Date of Birth</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
