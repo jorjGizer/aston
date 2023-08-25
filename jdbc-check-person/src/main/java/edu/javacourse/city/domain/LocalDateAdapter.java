@@ -17,4 +17,7 @@ public class LocalDateAdapter extends XmlAdapter<String, LocalDate> {
     public String marshal(LocalDate localDate) throws Exception {
         return localDate.format(DateTimeFormatter.ofPattern(DD_MM_YYYY));
     }
+    public void nothing(){
+        System.out.println("Добавляю новые строчки для пулреквеста");
+    }
 }
