@@ -11,7 +11,7 @@ CREATE TABLE cr_district(
 );
 
 INSERT INTO cr_district (district_code, district_name)
-VALUES (1, 'Выборгский район');
+VALUES (1, 'Чертановский район');
 
 CREATE TABLE cr_street(
         street_code integer not null,
