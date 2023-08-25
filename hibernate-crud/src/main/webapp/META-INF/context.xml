@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource
+        driverClassName="org.postgresql.Driver"
+        maxActive="4"
+        maxIdle="2"
+        maxWait="5000"
+        name="jdbc/test-hiber"
+        username="postgres"
+        password="8258"
+        type="javax.sql.DataSource"
+        url="jdbc:postgresql://localhost/test-hiber"
+        vaidationQuery="SELECT 1">
+    </Resource>
+</Context>
